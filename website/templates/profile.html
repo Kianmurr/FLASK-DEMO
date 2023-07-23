@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<h3>Profile</h3>
+<form method="POST">
+  <label for="surname">Surname</label>
+  <input type="text" name="surname" id="surname" />
+  {{ user.surname }}
+  <div align="center">
+    <button type="submit" class="btn btn-primary">Update Profile</button>
+  </div>
+</form>
+
+{% endblock %}
